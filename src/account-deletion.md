@@ -85,6 +85,8 @@ Account deletion in IBA Companion is implemented as a
   stems, secure tokens, push-notification registration, and local
   preferences — is wiped from the device that initiated the
   deletion.
+- You are removed from every show chat and receive nothing further
+  from it.
 - Push-notification tokens for your account are invalidated. You
   will not receive any further notifications from IBA Music after
   the deletion completes.
@@ -106,6 +108,7 @@ paid, even after they have stopped working with us:
 | Performance and attendance records | 7 years | Florida tax and labor records retention. |
 | Invoices, 1099s, and payment records | 7 years | IRS and state tax compliance. |
 | Location check-in records associated with paid attendance | 7 years (alongside the attendance record) | Cannot be unlinked without invalidating the attendance record. |
+| Show confirmations, and messages and photos you sent in show chats | 7 years (with the record for that show) | Kept with the show's records; not shown or delivered to you after closure. |
 | Profile information necessary to identify those records (name, payee email, phone, instrument) | 7 years | Required so that the retained records remain meaningful and auditable. |
 | Push-notification token | Removed immediately on deletion | Not legally required to retain. |
 | Crash and diagnostic logs (Apple / Google platform-level) | Controlled by Apple / Google | We do not retain copies on our own infrastructure. |

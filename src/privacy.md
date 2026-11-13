@@ -35,14 +35,19 @@ This policy applies to:
 
 - **IBA Companion** — our iOS app for iPhone. Musicians use it to
   view their performance schedule, check in at venues, rehearse
-  setlists with multitrack stems (Practice), and optionally sync
-  their schedule to Apple Calendar (via EventKit) or Google Calendar
-  (via the scope described in section 5).
+  setlists with multitrack stems (Practice), confirm a show before
+  it starts (Show Confirm, section 3.13), talk with the rest of the
+  show's lineup and the IBA Music office in a per-show group chat
+  (Show Chat, section 3.14), and optionally sync their schedule to
+  Apple Calendar (via EventKit) or Google Calendar (via the scope
+  described in section 5).
 - **IBA Companion for Android** — the native Android edition of the
-  same app, distributed through the Google Play Store. It mirrors the
-  iOS feature set: viewing the performance schedule, manual venue
-  check-in, rehearsing setlists with multitrack stems (Practice), and
-  optional schedule sync to the device's calendar. The Android-specific
+  same app, distributed through the Google Play Store. It mirrors most
+  of the iOS feature set: viewing the performance schedule, manual
+  venue check-in, rehearsing setlists with multitrack stems (Practice),
+  and optional schedule sync to the device's calendar. It does **not**
+  have Show Confirm or Show Chat (sections 3.13 and 3.14), which are
+  iOS-only. The Android-specific
   platform disclosures — permissions, push, crash reporting, and the
   Google Play Data Safety mapping — are in section 6A.
 - **IBA Music Admin Dashboard** at admin.ibamusic.com — the internal
@@ -69,8 +74,9 @@ and link to it from the [Legal Center](/).
 > We do not use analytics or advertising trackers. We do not read
 > your Google calendar — the scope we request only lets IBA Companion
 > manage calendars it creates itself. We collect the information we
-> need to run live-music performances (schedule, check-ins) and
-> nothing more.
+> need to run live-music performances (schedule, check-ins, show
+> confirmations, and the messages and photos you choose to post in
+> your show's group chat) and nothing more.
 
 The rest of this policy explains each item in detail.
 
@@ -195,8 +201,9 @@ reporting.
   (FCM)** registration token on Android (see section 6A.3). We store
   that token so IBA Music's backend can deliver operational push
   notifications — schedule changes, check-in reminders, payroll
-  updates. We do **not** send marketing or advertising push
-  notifications.
+  updates, and, on iOS, Show Confirm requests and Show Chat messages
+  (sections 3.13 and 3.14). We do **not** send marketing or
+  advertising push notifications.
 - **Background delivery modes.** IBA Companion declares the iOS
   background modes listed below, each tied to a specific,
   user-visible feature. It does **not** declare `voip`,
@@ -358,16 +365,18 @@ IBA Companion does **not**:
   not reported back to our servers.
 - Apply any copy protection or DRM beyond the standard iOS
   sandbox — the stems are IBA Music's intellectual property (see
-  [Terms of Service](/terms) §4.5) and your right to use them
+  [Terms of Service](/terms) §4.4) and your right to use them
   ends when your engagement with IBA Music ends, at which point
   your access to the Companion API is revoked and any local
   downloads become orphaned and age out via TTL.
 
-### 3.10 Photos and camera (not collected)
+### 3.10 Photos and camera (only for photos you send)
 
-IBA Companion does **not** declare `NSCameraUsageDescription` or
-`NSPhotoLibraryUsageDescription`. It does not access the device
-camera or photo library.
+IBA Companion does not browse, scan, or upload your photo library or
+use your camera in the background. The only photos IBA Companion
+receives are ones you choose to send in a Show Chat (section 3.14);
+the app reduces the size of the photo on your device before it is
+sent. Nothing else in the app uploads photos.
 
 ### 3.12 Maps and external apps (canOpenURL only)
 
@@ -389,19 +398,95 @@ schemes and does not use these queries for analytics,
 fingerprinting, or any purpose other than rendering the optional
 "open in…" buttons.
 
+### 3.13 Show Confirm (iOS)
+
+Before a show, IBA Companion asks you to **confirm** that you will be
+there. Confirm opens about 24 hours before the show's call time and
+closes when the show ends.
+
+- **What we collect.** Which show you confirmed, when you confirmed,
+  and how: in the app, from the notification, or by an IBA Music
+  office administrator on your behalf (for example after a phone
+  call). Confirming is a record of your answer, not a location, and
+  it is separate from **Check In** (section 3.5).
+- **Who sees it.** Everyone on that show's lineup (the musicians and
+  audio technicians assigned to it) and IBA Music office staff can
+  see whether you have confirmed and when. IBA Music staff can also
+  see how you confirmed.
+- **Notifications.** If you have allowed notifications, we send a
+  request when Confirm opens and one reminder later if you have not
+  confirmed (section 6.3). You can turn notifications off in your
+  device settings.
+- **How long we keep it.** Confirmations are kept with the show's
+  performance record for the period in section 8.
+
+### 3.14 Show Chat (iOS)
+
+Each show has one **group chat** for the people assigned to it, anyone
+an IBA Music administrator adds, and IBA Music office staff. It is a
+work channel for that show. It is available in IBA Companion on iOS
+only. IBA Music does not use a third-party chat provider: messages and
+photos are stored in IBA Music's own Cloudflare database and R2
+object storage (section 7).
+
+- **What we collect.** The messages you send (text of up to 2,000
+  characters, or a photo with an optional caption), reactions you add
+  to messages, the time of each, and your name as the sender. We also
+  keep which message you have read last and whether you have muted
+  the chat, so the app can show your unread count; other people
+  cannot see this.
+- **Who sees it.** Everyone in that show's chat can read the
+  messages, see photos, see who reacted, and see the lineup with each
+  person's name, role, whether they have confirmed, and whether they
+  have checked in (not where). Quiet system lines, such as "someone
+  confirmed" or "someone was added", may also appear. IBA Music
+  office staff can read and post in every show chat. Staff may post
+  under their own name (shown with an "IBA" tag) or as **IBA Music**;
+  we record which staff member posted as IBA Music, but that is not
+  shown to performers. Photos are served only to members of the chat
+  they were sent to.
+- **Not private.** Show Chat is not a private channel. Do not post
+  anything you would not want your lineup and the IBA Music office to
+  see.
+- **When the chat is open.** A chat opens about 24 hours before the
+  show's call time, becomes read-only after the day following the
+  show, and leaves the app's lists a week after that. The stored
+  messages are not deleted at that point; they are kept as described
+  in section 8.
+- **Delete and report.** You can delete your own messages. IBA Music
+  office staff can remove any message. A deleted or removed message
+  is replaced with "Message removed" and its text and photo are no
+  longer shown in the chat; IBA Music may keep the removed message in
+  its records for the period in section 8. Any member can **report**
+  a message from the app, with an optional reason. Reports go to IBA
+  Music office staff, who may remove the message or the person from
+  the chat. See also the [Terms of Service](/terms) §4.5.
+- **Notifications and muting.** We send a push notification for new
+  messages, showing the sender's name and the message text (or
+  "Photo"), through Apple's push service (section 6.3). You do not
+  receive one for your own messages. You can **mute** a chat from
+  inside the chat, and mute stops its message notifications. Time-sensitive
+  announcements from IBA Music (for example a changed arrival time)
+  are still delivered. You can also turn notifications off in
+  **Settings → Notifications → IBA Companion**.
+- **Closed accounts.** If your account is closed (section 6.6) you
+  are no longer a member of any chat and receive nothing from it.
+
 ## 4. How We Use Information
 
 We use the information described in section 3 to:
 
 - **Provide the service** — show you your performance schedule,
-  route push notifications, accept check-ins, and (if you opt in)
-  keep your calendar in sync.
+  route push notifications, accept check-ins and show confirmations,
+  run the group chat for each show, and (if you opt in) keep your
+  calendar in sync.
 - **Run internal operations** — payroll, attendance reconciliation,
   performance reporting, customer-service responses to musicians
   who write to us with questions about their schedule.
 - **Security and fraud prevention** — detect abusive sign-in
-  attempts, investigate suspected fake check-ins, and protect the
-  integrity of payroll data.
+  attempts, investigate suspected fake check-ins, protect the
+  integrity of payroll data, and review reported or abusive messages
+  in show chats.
 - **Legal compliance** — respond to lawful subpoenas and court
   orders, comply with tax and labor-law record-keeping, and meet
   other statutory obligations.
@@ -582,13 +667,24 @@ IBA Music uses push notifications **only** for:
 
 - Schedule changes (a performance moved, added, or cancelled)
 - Check-in reminders before a performance
+- **Show Confirm** — a request when Confirm opens for a show, and one
+  reminder if you have not yet confirmed (section 3.13). You can
+  confirm from the notification.
+- **Show Chat** — new messages in your show's chat, showing the
+  sender's name and the message text or "Photo" (section 3.14). You
+  can reply from the notification, and a reply is posted to the chat
+  as a message from you. Notifications for a chat stop when you mute
+  it, except for time-sensitive announcements from IBA Music.
+  Message text in these notifications passes through Apple's push
+  service to reach your device.
 - Payroll status updates
 - **Stage Alerts** — time-sensitive on-stage messages sent by IBA
   Music staff during a performance. You can acknowledge or reply
   from the notification by choosing one of four predefined
-  responses (OK, On my way, Need 5 min, Can't right now). Replies
-  are posted only to IBA Music's Companion API — no free-text
-  input is accepted and no third party sees them.
+  responses (OK, On my way, Need 5 min, Can't right now). Stage
+  Alert replies are posted only to IBA Music's Companion API — no
+  free-text input is accepted for Stage Alerts and no third party
+  sees them.
 - Critical service announcements from IBA Music operations
 
 We do **not** send advertising notifications, marketing offers,
@@ -679,7 +775,8 @@ account on the same terms.
 deactivate your IBA Music account so you can no longer sign in to
 IBA Companion or to the web tools through any sign-in provider
 (Apple, Google, Microsoft, or email). You are signed out on every
-device you were using. Push notifications to those devices stop.
+device you were using. Push notifications to those devices stop. You
+are no longer a member of any show chat and receive nothing from it.
 In-app closures take effect immediately; email closures take effect
 within 30 days of receipt.
 
@@ -690,14 +787,17 @@ personal identifiers — your name, contact information, instruments,
 and the performance history itself — needed to keep those records
 meaningful to a tax auditor or labor regulator. IBA Music retains
 this information for **seven (7) years** from the date of the
-underlying record.
+underlying record. This includes show confirmations and the messages
+and photos you sent in show chats, which are kept with the record for
+that show; they are not removed from IBA Music's records when your
+account is closed.
 
 During the retention period IBA Music uses the retained information
 **only** for tax, labor, audit, and legal-process purposes, and only
 when specifically required by law or by a legitimate business
 continuity need. The retained information is **not** made available
 to any active feature of the Service — it is not used for scheduling,
-messaging, push notifications, marketing, automated processing,
+messaging or chat, push notifications, marketing, automated processing,
 feature enrichment, model training, analytics, or any operational
 function of IBA Companion after your account is closed. You are not
 contacted about events, schedules, availability, or any other
@@ -744,7 +844,7 @@ Phone Number, that IBA Admin does not collect.
 | **Identifiers** — User ID (from sign-in provider) | Section 3.1 | Yes | No | App Functionality |
 | **Usage Data** | *Not collected* | — | — | — |
 | **Diagnostics** | *Not collected by IBA Music.* Apple's platform-level crash reports remain available to us via App Store Connect only when you opt in via your device's "Share With App Developers" setting; see §3.6. | — | — | — |
-| **User Content** | *Not collected* — see §3.9 (Practice audio is delivered to device, not collected) and §3.10 (camera / photos not used) | — | — | — |
+| **User Content** — Emails or Text Messages; Photos or Videos | Messages and photos you send in a Show Chat (§3.14); Show Confirm itself is covered under the existing categories (§3.13) | Yes | No | App Functionality |
 | **Sensitive Info** | *Not collected* | — | — | — |
 | **Financial Info** | *Not collected* | — | — | — |
 | **Health & Fitness** | *Not collected* | — | — | — |
@@ -759,10 +859,11 @@ section 6.5).
 Practice stem audio (§3.9) is delivered **to** your device from
 IBA Music's own servers — it is not user-provided content and is
 not "collected" in the App Store privacy-label sense. The
-User Content row above is "Not collected" for exactly this
-reason: Practice does not upload audio and does not link that
-audio to your user identity, and the camera / photo library are
-never accessed (§3.10).
+User Content row above covers only what you type or send yourself in
+a Show Chat: messages and photos, stored with your name, used for
+the chat and not for any other purpose. Practice does not upload audio, and
+the app does not read your photo library apart from photos you
+choose to send (§3.10).
 
 ### 6.8 Supported operating systems and upgrade path
 
@@ -811,8 +912,9 @@ Android 13+ `POST_NOTIFICATIONS` runtime prompt) the app registers
 with FCM and sends the resulting device registration token to IBA
 Music's backend so we can deliver the same operational notifications
 described in section 6.3 — schedule changes, check-in reminders,
-payroll updates, stage alerts, and critical service announcements. We
-send no advertising or marketing notifications. FCM is operated by
+payroll updates, stage alerts, and critical service announcements
+(Show Confirm and Show Chat notifications are iOS-only; see sections
+3.13 and 3.14). We send no advertising or marketing notifications. FCM is operated by
 Google as a sub-processor (section 7).
 
 ### 6A.4 Crash and diagnostic reporting (Firebase Crashlytics)
@@ -878,7 +980,9 @@ sense.
 
 The Practice feature downloads IBA Music's own audio stems **to** your
 device; it does not collect or upload audio from you. The Android app
-does not access the camera or photo library.
+does not access the camera or photo library, and it does not have
+Show Confirm or Show Chat (sections 3.13 and 3.14), so it collects no
+messages or photos.
 
 ## 6B. IBA Admin (iOS) Platform Disclosures
 
@@ -1068,7 +1172,7 @@ below is a summary.
 | **Apple Inc.** | Apple Push Notification service (APNs), Apple Sign-In, EventKit for optional Apple Calendar sync, ActivityKit for the Set Tracker Live Activity (§6.4), and Apple WeatherKit for the optional venue precipitation forecast shown inside the Live Activity (queries use venue coordinates, not your device location). |
 | **Google LLC** | Google Calendar API via the `calendar.app.created` scope (opt-in calendar sync on iOS); Google Sign-In for authentication; and, on Android, **Firebase Cloud Messaging** (operational push-notification delivery) and **Firebase Crashlytics** (crash and diagnostic reporting, with on-device PII redaction). |
 | **Microsoft Corporation** | Microsoft Sign-In (Azure Active Directory) — IBA Companion offers Microsoft 365 sign-in to musicians whose IBA Music account is linked to a Microsoft identity, alongside Apple Sign-In and Google Sign-In. Microsoft Graph is also used on the IBA Music admin side to sync performance bookings with IBA Music staff Outlook calendars; that admin use is not part of the IBA Companion app. |
-| **Cloudflare, Inc.** | Edge hosting for admin.ibamusic.com and related tools, database storage (Cloudflare D1 — performance schedule, check-ins, song metadata), object storage (Cloudflare R2 — IBA Music's multitrack audio stems used by the Practice feature, §3.9), and Cloudflare Pages hosting for this legal subdomain itself. Cloudflare processes data on IBA Music's behalf; its own use of the data is governed by its contractual role as a processor. |
+| **Cloudflare, Inc.** | Edge hosting for admin.ibamusic.com and related tools, database storage (Cloudflare D1 — performance schedule, check-ins, song metadata), object storage (Cloudflare R2 — IBA Music's multitrack audio stems used by the Practice feature, §3.9, and photos sent in Show Chat, §3.14), Show Confirm and Show Chat records and messages (D1), and Cloudflare Pages hosting for this legal subdomain itself. Cloudflare processes data on IBA Music's behalf; its own use of the data is governed by its contractual role as a processor. |
 
 We also disclose information when we reasonably believe disclosure
 is necessary to comply with a lawful subpoena, court order, or
@@ -1087,6 +1191,8 @@ doing so is proper and practical.
 | Account profile | Until you close your account, plus up to 30 days to complete deletion. |
 | Performance and attendance records | Seven (7) years, consistent with Florida tax and labor-records requirements. |
 | Location records (check-ins) | Seven (7) years alongside the associated attendance record. We do not maintain location history outside of check-in transactions. |
+| Show confirmations | Seven (7) years, with the performance record for that show. |
+| Show Chat messages and photos (including removed messages) | Kept under the same rules as other show records, seven (7) years with the record for that show. A chat leaves the app's lists a week after it becomes read-only, but the stored messages are not deleted then. |
 | Push notification tokens | Until the token is invalidated by your device or you sign out. |
 | Crash and diagnostic logs (platform-level, via Apple/Google) | Controlled by Apple/Google. We do not retain copies on our own infrastructure. |
 | Google Calendar data | Not stored on IBA Music servers. Events live in your Google account; we write to them but do not keep a mirror. |

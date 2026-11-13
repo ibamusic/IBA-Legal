@@ -47,6 +47,11 @@ IBA Companion lets an IBA Music musician:
   check-in reminders, and payroll updates. Push is optional and
   can be disabled in device settings. IBA Music does not send
   advertising notifications.
+- **Confirm a show and chat with the lineup (iOS only)** — before a
+  show, confirm that you will be there; each show also has a group
+  chat for its lineup and the IBA Music office, with text, photos,
+  and reactions. See the Privacy Policy for what is collected and
+  how long it is kept.
 - **Optionally sync the schedule to a calendar** — on iOS, either to
   the device's native **Apple Calendar** through Apple's EventKit
   framework or to **Google Calendar** through a narrowly-scoped Google

@@ -32,7 +32,9 @@ Access is limited to musicians contracted to IBA Music, IBA Music
 staff, band leaders, and other authorized contractors.
 
 Features include viewing your performance schedule, checking in at
-venues, receiving push notifications about schedule changes
+venues, confirming a show before it starts and chatting with the
+show's lineup and IBA Music office in a per-show group chat (iOS
+only), receiving push notifications about schedule changes
 (including on-stage Stage Alerts during a performance), rehearsing
 setlists with multitrack audio stems in the Practice tab,
 displaying a Set Tracker during performances (a Live Activity on
@@ -82,6 +84,7 @@ When using the Service you agree **not** to:
   overridden.
 - **Violate applicable law** or use the Service to violate the
   rights of others.
+- **Misuse a show chat.** See section 4.5.
 
 Good-faith security research is welcomed and is governed by the
 responsible-disclosure policy on the [Security](/security) page.
@@ -108,6 +111,35 @@ auto-delete described in [Privacy Policy §3.9](/privacy/#39-practice-multitrack
 is a best-effort storage-hygiene mechanism, not a DRM system —
 your license obligations apply regardless of whether a cached
 file still exists on your device.
+
+### 4.5 Show chats
+
+Each show on iOS has a group chat for the people assigned to it,
+anyone an IBA Music administrator adds, and IBA Music office staff
+(see [Privacy Policy §3.14](/privacy/)). It is a **work channel** for
+that show. You agree not to use it to:
+
+- **Harass, threaten, or demean** anyone, or post hateful, sexual,
+  or otherwise abusive content.
+- **Post illegal content** or anything that infringes someone else's
+  rights.
+- **Share other people's private information**, such as phone
+  numbers, addresses, photos of people who have not agreed, or
+  details about someone's health or personal life.
+- **Spam or advertise**, or discuss matters unrelated to the show.
+
+IBA Music office staff can read every show chat. IBA Music may
+**remove any message**, may **remove a person from a chat**, and may
+restrict a person's access to chats, at any time and without notice,
+for a violation of these Terms or to protect others. Removing a
+message or a person from a chat does not by itself end your
+engagement with IBA Music, but repeated or serious violations may
+lead to suspension or termination under section 10.
+
+You can delete your own messages. To **report a message**, use the
+report option on that message in the app, optionally giving a
+reason; reports go to IBA Music office staff. You can also write to
+[privacy@ibamusic.com](mailto:privacy@ibamusic.com).
 
 ## 5. Fees and Payments
 
@@ -217,7 +249,8 @@ days of receipt; in-app closures are immediate.
 **What happens on closure.** Your IBA Music account is immediately
 deactivated so you can no longer sign in via any provider (Apple,
 Google, Microsoft, or email). You are signed out on every device.
-Push notifications to those devices stop. You cannot reactivate the
+Push notifications to those devices stop. You are no longer a member
+of any show chat. You cannot reactivate the
 account yourself — an IBA Music administrator is required to undo
 the closure on request.
 
@@ -258,6 +291,10 @@ royalty-free license to store, display, and use that content for the
 purpose of operating the Service and performing IBA Music's own
 business (payroll reconciliation, attendance records, tax filings).
 
+Messages and photos you post in a show chat are work communications
+about that show. They are kept with the show's records as described in
+[Privacy Policy §8](/privacy/#data-retention).
+
 **Feedback.** If you send us feedback, feature requests, or bug
 reports, you agree that we may use them without obligation to you
 and without compensation. This does not give us any right to
@@ -269,7 +306,9 @@ You may stop using the Service at any time. You may request account
 deletion by emailing
 [privacy@ibamusic.com](mailto:privacy@ibamusic.com).
 
-IBA Music may terminate or suspend your access to the Service at
+IBA Music may remove messages, remove you from a show chat, or
+restrict your access to chats as described in section 4.5. IBA Music
+may also terminate or suspend your access to the Service at
 any time, with or without notice, if: you violate these Terms;
 your engagement with IBA Music ends; we reasonably believe
 termination is necessary to protect IBA Music, our musicians, or
