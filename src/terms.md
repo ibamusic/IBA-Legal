@@ -188,7 +188,7 @@ schedule to your device's native calendar through the Android
 Calendar Provider, as described in [Privacy Policy §6A.5](/privacy/).
 This is an on-device, local integration — IBA Music's servers do not
 store a mirror of your device calendar data. You can revoke calendar
-access at any time in **Settings → Apps → IBA Performer →
+access at any time in **Settings → Apps → IBA Companion →
 Permissions → Calendar**. If your device calendar is backed by a
 Google or Microsoft account, your use of that calendar is governed by
 that provider's own terms.

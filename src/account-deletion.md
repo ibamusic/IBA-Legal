@@ -5,8 +5,8 @@ description: How to delete your IBA Performer account, what data is removed, and
 permalink: /account-deletion/
 ---
 
-This page describes how to delete your **IBA Performer** account on
-iOS or Android, what information is removed when you do so, and the
+This page describes how to delete your account in **IBA Performer**
+(iOS) or **IBA Companion** (Android), what information is removed when you do so, and the
 records IBA Music must retain for tax, payroll, and labor-law
 purposes. It exists so that the deletion path is discoverable
 without first installing the app, as required by Google Play and
@@ -37,7 +37,7 @@ calls our deletion endpoint and wipes the app's on-device data.
 
 **Android:**
 
-1. Open **IBA Performer**.
+1. Open **IBA Companion**.
 2. Tap the **Settings** tab.
 3. Scroll to **Delete Account** and tap it.
 4. Read the disclosure and tap **Continue**.

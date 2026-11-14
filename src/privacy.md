@@ -34,7 +34,7 @@ IBA Performer's use of the Google Calendar API.
 This policy applies to:
 
 - **IBA Performer** — our iOS app for iPhone (earlier versions were named
-  IBA Performer). Musicians use it to
+  IBA Companion). Musicians use it to
   view their performance schedule, check in at venues, rehearse
   setlists with multitrack stems (Practice), confirm a show before
   it starts (Show Confirm, section 3.13), talk with their band and the IBA Music office in group chats with a
@@ -259,7 +259,7 @@ Calendar sync is **optional**. Your choices are:
 - **Android device calendar (Calendar Provider)** — on Android,
   schedule sync writes to your device's native calendar through the
   Android Calendar Provider, which requires the `READ_CALENDAR` and
-  `WRITE_CALENDAR` permissions. See section 6A.5. IBA Performer
+  `WRITE_CALENDAR` permissions. See section 6A.5. IBA Companion
   writes and maintains only the IBA Music calendar entries it creates
   and never reads or modifies your other calendar events.
 
@@ -949,7 +949,7 @@ Remote Config, App Check, or any other analytics SDK.
 
 Optional schedule sync on Android writes to your device's native
 calendar through the **Android Calendar Provider**, which requires
-the `READ_CALENDAR` and `WRITE_CALENDAR` permissions. IBA Performer
+the `READ_CALENDAR` and `WRITE_CALENDAR` permissions. IBA Companion
 creates and maintains only the IBA Music calendar entries it writes —
 identified by a stable IBA Music event identifier — and reads back
 only those entries so it can update or remove them when your schedule
@@ -980,7 +980,7 @@ Play's in-app data-deletion requirement.
 
 This table maps the data described elsewhere in this policy to
 Google Play's Data Safety categories, so Play reviewers can
-cross-check it against the Data Safety form on IBA Performer's Play
+cross-check it against the Data Safety form on IBA Companion's Play
 listing. No data type is used for tracking, and none is shared for
 advertising. Data processed by Google as a service provider (FCM,
 Crashlytics) is "collected" but not "shared" in the Data Safety
@@ -1112,8 +1112,8 @@ Transparency prompt because it has nothing to ask for.
 
 The app contains **no third-party SDKs at all** — no analytics, no
 crash reporter, no advertising library. Its only dependencies are
-first-party Apple frameworks. Note that this differs from the Android
-edition of IBA Performer, which does use Firebase Crashlytics
+first-party Apple frameworks. Note that this differs from IBA Companion
+for Android, which does use Firebase Crashlytics
 (section 6A.4); **no equivalent exists in IBA Admin**.
 
 The app also does not access the camera or the photo library, and
@@ -1231,8 +1231,8 @@ email address on file with your account, or use another method
 reasonable to verify your identity. We respond within the time
 frames required by applicable law.
 
-For step-by-step instructions on deleting your IBA Performer
-account from inside the iOS or Android app, see the dedicated
+For step-by-step instructions on deleting your account from inside
+IBA Performer (iOS) or IBA Companion (Android), see the dedicated
 [Account deletion](/account-deletion/) page.
 
 ## 10. European Economic Area, United Kingdom, and Switzerland (GDPR)
