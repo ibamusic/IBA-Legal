@@ -19,11 +19,11 @@ them.
 
 ## IBA Music mobile app
 
-**IBA Companion** for iOS (iPhone) does not use HTTP cookies. The
+**IBA Performer** for iOS (iPhone) does not use HTTP cookies. The
 app authenticates via OAuth 2.0 tokens or an IBA Music-issued
 session token stored in the iOS Keychain and sent with API requests
 as HTTP authorization headers. No cookie is set or read by the
-IBA Companion iOS app.
+IBA Performer iOS app.
 
 ## IBA Music Admin Dashboard (admin.ibamusic.com)
 

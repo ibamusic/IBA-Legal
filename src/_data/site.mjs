@@ -34,7 +34,7 @@ export default {
 
   // Products covered by these legal documents
   productsCovered: [
-    "IBA Companion for iOS (iPhone)",
+    "IBA Performer for iOS (iPhone)",
     "IBA Companion for Android",
     "IBA Music Admin Dashboard (admin.ibamusic.com)",
     "IBA Admin for iOS (iPhone)",
@@ -46,9 +46,9 @@ export default {
 
   // Effective date for the current published version of these
   // documents. Bump when material changes are made. App version is
-  // the IBA Companion iOS build these documents apply to.
-  effectiveDate: "2026-04-30",
-  appVersion: "1.2",
+  // the IBA Performer iOS build these documents apply to.
+  effectiveDate: "2026-11-14",
+  appVersion: "1.6",
 
   // Copyright year — computed once per build
   currentYear: new Date().getFullYear(),

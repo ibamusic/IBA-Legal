@@ -27,22 +27,23 @@ authorized contractors. They are **not** general-purpose consumer
 products. You are most likely reading this policy because you are
 one of those people, because you are a regulator or legal reviewer,
 or because you are a Google OAuth verification reviewer assessing
-IBA Companion's use of the Google Calendar API.
+IBA Performer's use of the Google Calendar API.
 
 ### 1.2 Products covered by this policy
 
 This policy applies to:
 
-- **IBA Companion** — our iOS app for iPhone. Musicians use it to
+- **IBA Performer** — our iOS app for iPhone (earlier versions were named
+  IBA Companion). Musicians use it to
   view their performance schedule, check in at venues, rehearse
   setlists with multitrack stems (Practice), confirm a show before
-  it starts (Show Confirm, section 3.13), talk with the rest of the
-  show's lineup and the IBA Music office in a per-show group chat
-  (Show Chat, section 3.14), and optionally sync their schedule to
+  it starts (Show Confirm, section 3.13), talk with their band and the IBA Music office in group chats with a
+  thread for each show (Show Chat, section 3.14), and optionally sync their schedule to
   Apple Calendar (via EventKit) or Google Calendar (via the scope
   described in section 5).
-- **IBA Companion for Android** — the native Android edition of the
-  same app, distributed through the Google Play Store. It mirrors most
+- **IBA Companion for Android** — the native Android edition of
+  IBA Performer, still named IBA Companion on Android, distributed
+  through the Google Play Store. It mirrors most
   of the iOS feature set: viewing the performance schedule, manual
   venue check-in, rehearsing setlists with multitrack stems (Practice),
   and optional schedule sync to the device's calendar. It does **not**
@@ -60,7 +61,7 @@ This policy applies to:
   iOS-specific platform disclosures for this app — permissions,
   sign-in, push, Wallet, calendar export, and the App Store
   privacy-label mapping — are in section 6B, **not** section 6, which
-  covers IBA Companion.
+  covers IBA Performer.
 - **IBA Music web tools** — availability forms and band leader
   schedule tools used by band leaders and musicians.
 
@@ -72,7 +73,7 @@ and link to it from the [Legal Center](/).
 
 > **Plain language, up front:** IBA Music does not sell your data.
 > We do not use analytics or advertising trackers. We do not read
-> your Google calendar — the scope we request only lets IBA Companion
+> your Google calendar — the scope we request only lets IBA Performer
 > manage calendars it creates itself. We collect the information we
 > need to run live-music performances (schedule, check-ins, show
 > confirmations, and the messages and photos you choose to post in
@@ -84,7 +85,7 @@ The rest of this policy explains each item in detail.
 
 ### 3.1 Account information
 
-When you sign in to IBA Companion or any IBA Music web tool, we
+When you sign in to IBA Performer or any IBA Music web tool, we
 receive your name, email address, and (for some providers) a unique
 identifier from the sign-in provider you choose: **Apple Sign-In**,
 **Google Sign-In**, **Microsoft Sign-In**, or an IBA Music-hosted
@@ -107,21 +108,21 @@ behalf. You can request corrections at any time.
 
 ### 3.3 Location (GPS)
 
-IBA Companion uses your device's precise location for **one purpose
+IBA Performer uses your device's precise location for **one purpose
 only**: to verify that you are physically present at the venue where
 IBA Music booked you to perform, at the time of check-in. Check-in
 is **manual** — you tap **Check In** on your upcoming performance,
-IBA Companion requests your current location once, and compares it
+IBA Performer requests your current location once, and compares it
 against the venue's coordinates. There is no background or automatic
 location tracking.
 
 #### iOS location permission we request
 
-IBA Companion declares one Core Location authorization on iOS:
+IBA Performer declares one Core Location authorization on iOS:
 
 | Permission | Key | Purpose string shown to you |
 |---|---|---|
-| While Using the App | `NSLocationWhenInUseUsageDescription` | *"IBA Companion checks your location when you tap Check In to confirm you've arrived at the venue. Location is never used in the background."* |
+| While Using the App | `NSLocationWhenInUseUsageDescription` | *"IBA Performer checks your location when you tap Check In to confirm you've arrived at the venue. Location is never used in the background."* |
 
 If you deny the prompt, the check-in feature is unavailable but
 the rest of the app continues to function normally.
@@ -147,10 +148,10 @@ check-in is unavailable but the rest of the app works normally.
   reduced-accuracy location and do not currently expose a
   reduced-accuracy toggle.
 - Location fixes are taken **only during a check-in transaction**
-  — IBA Companion does not log a continuous location history, does
+  — IBA Performer does not log a continuous location history, does
   not track your movement between venues, and does not retain
   location points outside of check-in records.
-- IBA Companion does **not** declare the `location` background
+- IBA Performer does **not** declare the `location` background
   mode and does **not** monitor geofences. On iOS,
   `CLLocationManager.allowsBackgroundLocationUpdates` is set to
   `false` at all times. On Android, the same guarantee is structural:
@@ -170,7 +171,7 @@ than the sub-processors listed in section 7. We do not sell it.
 #### How to turn it off
 
 On iPhone, go to **Settings → Privacy & Security → Location Services
-→ IBA Companion**; on Android, go to **Settings → Apps → IBA
+→ IBA Performer**; on Android, go to **Settings → Apps → IBA
 Companion → Permissions → Location**. You can change or revoke
 permission at any time. Disabling location will prevent the check-in
 feature from working but will not affect schedule viewing, calendar
@@ -181,7 +182,7 @@ sync, or any other part of the app.
 We receive your upcoming performance schedule from IBA Music's
 internal booking system. This includes the venue, date, start and
 end times, dress code, call time, band name, and any notes relevant
-to the performance. This is the core data IBA Companion exists to
+to the performance. This is the core data IBA Performer exists to
 display to you.
 
 ### 3.5 Check-in and attendance records
@@ -195,7 +196,7 @@ reporting.
 ### 3.6 Device and technical information
 
 - **Push notification tokens.** If you grant notification permission,
-  IBA Companion registers for remote notifications and hands us the
+  IBA Performer registers for remote notifications and hands us the
   device token your device reports — the **Apple Push Notification
   service (APNs)** token on iOS, or the **Firebase Cloud Messaging
   (FCM)** registration token on Android (see section 6A.3). We store
@@ -204,7 +205,7 @@ reporting.
   updates, and, on iOS, Show Confirm requests and Show Chat messages
   (sections 3.13 and 3.14). We do **not** send marketing or
   advertising push notifications.
-- **Background delivery modes.** IBA Companion declares the iOS
+- **Background delivery modes.** IBA Performer declares the iOS
   background modes listed below, each tied to a specific,
   user-visible feature. It does **not** declare `voip`,
   `external-accessory`, `bluetooth-central`, or any other background
@@ -216,7 +217,7 @@ reporting.
     | `fetch` | Calendar sync v2 | Periodic `BGAppRefreshTask` with identifier `com.rolotrealanis.IBA-Companion.calendarsync.refresh` reconciles your opted-in calendar with your performance schedule while the app is in the background. |
     | `audio` | Practice (multitrack rehearsal, §3.9) | Allows Practice audio you started to continue playing when the screen is locked or the app is backgrounded — identical behavior to any music or podcast app. |
 
-    IBA Companion does **not** use the `audio` background mode to
+    IBA Performer does **not** use the `audio` background mode to
     record audio, capture microphone input, run speech recognition,
     or do anything other than continue user-initiated rehearsal
     playback. The microphone is never accessed —
@@ -224,7 +225,7 @@ reporting.
     `AVAudioSession` is configured for `.playback` (output only),
     never `.record` or `.playAndRecord`.
 - **Crash and diagnostic logs.** This differs by platform:
-    - *On iOS*, IBA Companion integrates **no** third-party
+    - *On iOS*, IBA Performer integrates **no** third-party
       crash-reporting SDK (no Firebase Crashlytics, Sentry, or
       Bugsnag). Platform-level crash reports are collected by Apple on
       IBA Music's behalf only when you opt in through Apple's "Share
@@ -263,7 +264,7 @@ Calendar sync is **optional**. Your choices are:
   and never reads or modifies your other calendar events.
 
 You can use one, both, or neither. Choosing neither does not
-disable any other feature of IBA Companion.
+disable any other feature of IBA Performer.
 
 ### 3.8 Biometric identifiers (NOT collected)
 
@@ -279,7 +280,7 @@ not receive, record, or retain:
 - Hand or palm geometry
 - Gait or behavioral-biometric signatures
 
-When you sign in to IBA Companion using Face ID or Touch ID via
+When you sign in to IBA Performer using Face ID or Touch ID via
 your device's standard auto-fill or sign-in provider flow, the
 biometric check happens **entirely on your device**, inside Apple's
 Secure Enclave. The biometric data never leaves your device and is
@@ -301,7 +302,7 @@ biometric-privacy laws.
 
 ### 3.9 Practice (multitrack rehearsal)
 
-IBA Companion includes a **Practice** tab that lets you rehearse
+IBA Performer includes a **Practice** tab that lets you rehearse
 the songs on your IBA Music setlist with separated instrument
 stems (vocals, drums, bass, keys, guitar, etc.). All practice data
 belongs either to IBA Music's backend or to your device — it is
@@ -317,34 +318,34 @@ in section 7.
 - **Audio stems** — individual instrument recordings that belong
   to IBA Music's internal multitrack library, stored in IBA
   Music's own Cloudflare R2 bucket. When you choose to practice a
-  song, IBA Companion downloads those stems to your device for
+  song, IBA Performer downloads those stems to your device for
   offline playback using a standard iOS background `URLSession`.
 - **On-device usage signals** — your per-song mixer preset (mute,
   solo, volume per stem), the last position you played to, and a
   "recently practiced" list. These are stored on your device only
   and are not transmitted to IBA Music unless you are signed in
-  and IBA Companion synchronizes preferences across your own
+  and IBA Performer synchronizes preferences across your own
   devices in a future release.
 
 #### On-device storage, limits, and deletion
 
-- Downloaded stems are cached in IBA Companion's sandboxed
+- Downloaded stems are cached in IBA Performer's sandboxed
   Documents directory (`Documents/Songs/{songId}/`). They are
   **not** indexed by iOS Spotlight, **not** shared to the Files
   app unless you explicitly export, and **not** visible to other
   apps.
-- IBA Companion enforces a **storage cap** (10 downloaded songs
+- IBA Performer enforces a **storage cap** (10 downloaded songs
   by default, configurable between 5 and 20) and a **time-to-live
   (TTL) auto-delete** (7 days by default, configurable between 3
   and 30). Stems you have not practiced in a while are
   automatically removed to keep device storage in check. You can
   review usage and delete downloads manually from
   **Settings → Practice → Storage**.
-- Uninstalling IBA Companion removes every stem file.
+- Uninstalling IBA Performer removes every stem file.
 
 #### Lock screen, CarPlay, and Bluetooth transport controls
 
-When you are practicing, IBA Companion publishes **Now Playing**
+When you are practicing, IBA Performer publishes **Now Playing**
 metadata (song title, artist, cover art, playback position) via
 `MPNowPlayingInfoCenter` so iOS can display it on your lock
 screen and in Control Center. It also registers for the standard
@@ -353,7 +354,7 @@ scrub) so the transport buttons on Bluetooth headphones, CarPlay,
 and your lock screen control the Practice player. This is
 identical to how any music or podcast app integrates with iOS.
 
-IBA Companion does **not**:
+IBA Performer does **not**:
 
 - Access Apple Music, the Music app's library, or any audio file
   outside its own downloaded stems.
@@ -372,15 +373,15 @@ IBA Companion does **not**:
 
 ### 3.10 Photos and camera (only for photos you send)
 
-IBA Companion does not browse, scan, or upload your photo library or
-use your camera in the background. The only photos IBA Companion
+IBA Performer does not browse, scan, or upload your photo library or
+use your camera in the background. The only photos IBA Performer
 receives are ones you choose to send in a Show Chat (section 3.14);
 the app reduces the size of the photo on your device before it is
 sent. Nothing else in the app uploads photos.
 
 ### 3.12 Maps and external apps (canOpenURL only)
 
-IBA Companion declares three URL schemes in
+IBA Performer declares three URL schemes in
 `LSApplicationQueriesSchemes` so that it can render
 "open in…" options if you have those apps installed:
 
@@ -393,14 +394,14 @@ IBA Companion declares three URL schemes in
 Each check is an **on-device-only** existence query using Apple's
 `canOpenURL` API — no information about your installed apps, your
 device, your location, or your account is transmitted to IBA Music
-or any third party. IBA Companion does not enumerate any other app
+or any third party. IBA Performer does not enumerate any other app
 schemes and does not use these queries for analytics,
 fingerprinting, or any purpose other than rendering the optional
 "open in…" buttons.
 
 ### 3.13 Show Confirm (iOS)
 
-Before a show, IBA Companion asks you to **confirm** that you will be
+Before a show, IBA Performer asks you to **confirm** that you will be
 there. Confirm opens about 24 hours before the show's call time and
 closes when the show ends.
 
@@ -422,53 +423,68 @@ closes when the show ends.
 
 ### 3.14 Show Chat (iOS)
 
-Each show has one **group chat** for the people assigned to it, anyone
-an IBA Music administrator adds, and IBA Music office staff. It is a
-work channel for that show. It is available in IBA Companion on iOS
-only. IBA Music does not use a third-party chat provider: messages and
-photos are stored in IBA Music's own Cloudflare database and R2
-object storage (section 7).
+Show Chat has two parts. A **group chat** is a standing chat for a band
+or contract (for example everyone who plays a particular park show),
+and inside it each show has its own **show thread**. A few one-off
+bookings have a show thread without a group. It is available in
+IBA Performer on iOS only. IBA Music does not use a third-party chat
+provider: messages and photos are stored in IBA Music's own Cloudflare
+database and R2 object storage (section 7).
 
+- **Who is in a group chat.** Everyone assigned to a show of that
+  group in the last or next 60 days, the audio technicians on those
+  shows, anyone an IBA Music administrator adds, and IBA Music office
+  staff. An administrator can also remove someone.
 - **What we collect.** The messages you send (text of up to 2,000
   characters, or a photo with an optional caption), reactions you add
   to messages, the time of each, and your name as the sender. We also
-  keep which message you have read last and whether you have muted
-  the chat, so the app can show your unread count; other people
-  cannot see this.
-- **Who sees it.** Everyone in that show's chat can read the
-  messages, see photos, see who reacted, and see the lineup with each
+  keep which message you have read last, whether you have muted a
+  chat, and who you have blocked, so the app can show your unread
+  count and hide what you asked not to see; other people cannot see
+  this.
+- **Who sees it.** Everyone in a group chat can read its messages
+  and the messages in each of its show threads, see photos, and see
+  who reacted. A show thread also shows that show's lineup with each
   person's name, role, whether they have confirmed, and whether they
   have checked in (not where). Quiet system lines, such as "someone
-  confirmed" or "someone was added", may also appear. IBA Music
-  office staff can read and post in every show chat. Staff may post
-  under their own name (shown with an "IBA" tag) or as **IBA Music**;
-  we record which staff member posted as IBA Music, but that is not
-  shown to performers. Photos are served only to members of the chat
-  they were sent to.
+  confirmed" or "a show thread is open", may also appear. IBA Music
+  office staff can read and post in every chat. Staff may post under
+  their own name (shown with an "IBA" tag) or as **IBA Music**; we
+  record which staff member posted as IBA Music, but that is not
+  shown to performers. Photos are served only to the people who can
+  read the chat they were sent to.
 - **Not private.** Show Chat is not a private channel. Do not post
-  anything you would not want your lineup and the IBA Music office to
+  anything you would not want the group and the IBA Music office to
   see.
-- **When the chat is open.** A chat opens about 24 hours before the
-  show's call time, becomes read-only after the day following the
-  show, and leaves the app's lists a week after that. The stored
-  messages are not deleted at that point; they are kept as described
-  in section 8.
-- **Delete and report.** You can delete your own messages. IBA Music
-  office staff can remove any message. A deleted or removed message
-  is replaced with "Message removed" and its text and photo are no
-  longer shown in the chat; IBA Music may keep the removed message in
-  its records for the period in section 8. Any member can **report**
-  a message from the app, with an optional reason. Reports go to IBA
-  Music office staff, who may remove the message or the person from
-  the chat. See also the [Terms of Service](/terms) §4.5.
+- **When chats are open.** A group chat is always open. A show thread
+  opens about 24 hours before the show's call time, becomes read-only
+  after the day following the show, and leaves the app's lists a week
+  after that. The stored messages are not deleted at that point; they
+  are kept as described in section 8.
+- **Delete, report and block.** You can delete your own messages.
+  IBA Music office staff can remove any message. A deleted or removed
+  message is replaced with "Message removed" and its text and photo
+  are no longer shown in the chat; IBA Music may keep the removed
+  message in its records for the period in section 8. Any member can
+  **report** a message from the app, with an optional reason. Reports
+  go to IBA Music office staff, who may remove the message or the
+  person from the chat. You can also **block** another member: you
+  will no longer see their messages, photos or reactions in any chat
+  or get notifications for them, and they are not told. Blocking from
+  a message also reports that message to IBA Music office staff. You
+  can unblock someone at any time in the app. See also the
+  [Terms of Service](/terms) §4.5.
 - **Notifications and muting.** We send a push notification for new
   messages, showing the sender's name and the message text (or
-  "Photo"), through Apple's push service (section 6.3). You do not
-  receive one for your own messages. You can **mute** a chat from
-  inside the chat, and mute stops its message notifications. Time-sensitive
+  "Photo"), through Apple's push service (section 6.3): for a group
+  chat's own conversation to everyone in the group, and for a show
+  thread only to the people on that show. You do not receive one for
+  your own messages or for people you have blocked. You can **mute** a
+  chat from inside the chat, and mute stops its message
+  notifications. Time-sensitive
   announcements from IBA Music (for example a changed arrival time)
   are still delivered. You can also turn notifications off in
-  **Settings → Notifications → IBA Companion**.
+  **Settings → Notifications → IBA Performer**.
 - **Closed accounts.** If your account is closed (section 6.6) you
   are no longer a member of any chat and receive nothing from it.
 
@@ -501,20 +517,20 @@ We do **not**:
 ## 5. Google Calendar Integration
 
 When you choose to sync your IBA Music performance schedule to
-Google Calendar, IBA Companion uses the Google OAuth 2.0
+Google Calendar, IBA Performer uses the Google OAuth 2.0
 authorization flow to request a single, narrow scope:
 
 **`https://www.googleapis.com/auth/calendar.app.created`**
 
-This scope permits IBA Companion to **create and manage only the
-calendars IBA Companion itself creates** in your Google account. It
+This scope permits IBA Performer to **create and manage only the
+calendars IBA Performer itself creates** in your Google account. It
 does not grant access to any calendar you created manually, any
 calendar shared with you by another person, or any other Google
 service.
 
-### 5.1 What IBA Companion creates
+### 5.1 What IBA Performer creates
 
-On first sync, IBA Companion creates:
+On first sync, IBA Performer creates:
 
 - One primary calendar named **IBA Music** in your Google account.
 - Optionally, one sub-calendar per band you perform with, named
@@ -527,20 +543,20 @@ parking), and the IBA Music event identifier used to look up the
 event on subsequent syncs. We do not write events containing any
 information you did not provide to IBA Music in the first place.
 
-### 5.2 What IBA Companion never accesses
+### 5.2 What IBA Performer never accesses
 
-IBA Companion **never**:
+IBA Performer **never**:
 
 - Reads any calendar you created manually in Google Calendar.
 - Reads any calendar another person has shared with you.
 - Accesses event details, attendees, attachments, or descriptions
-  from any calendar IBA Companion did not itself create.
+  from any calendar IBA Performer did not itself create.
 - Accesses any other Google service (Gmail, Drive, Contacts, Photos,
   Maps, YouTube, Tasks, Keep, or any other).
 
 The `calendar.app.created` scope is **technically incapable** of
 reading user-created or shared calendars — the Google Calendar API
-refuses such requests at the server. IBA Companion requests no other
+refuses such requests at the server. IBA Performer requests no other
 Google scope, so there is no other API path by which we could reach
 your data.
 
@@ -552,7 +568,7 @@ including the [Limited Use](https://developers.google.com/terms/api-services-use
 requirements. In plain English:
 
 - **No advertising.** We do not use Google user data — including the
-  contents of any calendar IBA Companion creates on your behalf — to
+  contents of any calendar IBA Performer creates on your behalf — to
   serve ads of any kind.
 - **No selling.** We do not transfer Google user data to third
   parties for money or any other consideration.
@@ -567,22 +583,22 @@ requirements. In plain English:
 
 ### 5.4 Revoking access
 
-You can revoke IBA Companion's Google Calendar access at any time:
+You can revoke IBA Performer's Google Calendar access at any time:
 
-- **Inside IBA Companion:** open Settings → Calendar Sync → and
+- **Inside IBA Performer:** open Settings → Calendar Sync → and
   choose **Disconnect Google**.
 - **In your Google account:** visit
   [myaccount.google.com/permissions](https://myaccount.google.com/permissions)
-  and remove IBA Companion.
+  and remove IBA Performer.
 
-Either action immediately stops IBA Companion from reading or writing
+Either action immediately stops IBA Performer from reading or writing
 any Google Calendar data.
 
 ### 5.5 What happens to the calendars after revocation
 
 The **IBA Music** calendar and any **IBA — {Band Name}**
-sub-calendars IBA Companion created remain in your Google account
-under **your sole control** after revocation. IBA Companion can no
+sub-calendars IBA Performer created remain in your Google account
+under **your sole control** after revocation. IBA Performer can no
 longer add, edit, or remove events in them. You can delete these
 calendars entirely from [calendar.google.com](https://calendar.google.com)
 at any time. IBA Music does not retain an independent copy of Google
@@ -594,8 +610,8 @@ the other way around.
 
 This section covers the additional disclosures that Apple App Store
 reviewers, App Tracking Transparency rules, and iOS platform
-conventions expect IBA Companion to make. It applies to the
-IBA Companion app on iPhone.
+conventions expect IBA Performer to make. It applies to the
+IBA Performer app on iPhone.
 
 **It does not apply to IBA Admin**, our separate iPhone app for office
 staff and administrators. IBA Admin's iOS disclosures — including its
@@ -603,54 +619,54 @@ own App Store privacy-label mapping — are in section 6B.
 
 ### 6.1 Apple Calendar integration (EventKit)
 
-IBA Companion can also sync your performance schedule to your
+IBA Performer can also sync your performance schedule to your
 device's **Apple Calendar** using Apple's EventKit framework. This
 is an **on-device, local** integration — the calendar and its events
 live in your device's own calendar database (and in iCloud if you
 have Apple Calendar iCloud sync enabled through your Apple ID), not
 on IBA Music's servers.
 
-When you enable Apple Calendar sync, IBA Companion asks you for
+When you enable Apple Calendar sync, IBA Performer asks you for
 calendar permission. iOS shows the standard prompt with the string
 `NSCalendarsFullAccessUsageDescription` —
-*"IBA Companion adds your performance schedule directly to your
+*"IBA Performer adds your performance schedule directly to your
 device calendar so it stays up to date even when the app is
 closed."*
 
 We request **full calendar access** (rather than the more limited
-"write-only access" introduced in iOS 17) because IBA Companion
+"write-only access" introduced in iOS 17) because IBA Performer
 needs to **read back** the events it previously wrote so it can
 update or delete them when your schedule changes without
-duplicating them. IBA Companion reads only the events it itself
+duplicating them. IBA Performer reads only the events it itself
 created for IBA Music — it identifies them by a stable IBA Music
 event identifier stored on each EventKit `EKEvent`. It does **not**
 read, modify, delete, or transmit events that belong to any
 other calendar source or that were created by any other app.
 
 You can revoke calendar access at any time in **Settings → Privacy
-& Security → Calendars → IBA Companion**. Revocation immediately
-stops IBA Companion from touching your Apple Calendar. The IBA
-Music calendar and any events IBA Companion previously wrote remain
+& Security → Calendars → IBA Performer**. Revocation immediately
+stops IBA Performer from touching your Apple Calendar. The IBA
+Music calendar and any events IBA Performer previously wrote remain
 under your sole control — you can delete them from Apple Calendar
 whenever you like. IBA Music does not retain a mirror of your
 device calendar on our servers.
 
 ### 6.2 Sign in with Apple
 
-IBA Companion offers **Sign in with Apple** as a first-class
+IBA Performer offers **Sign in with Apple** as a first-class
 authentication option alongside Google Sign-In, consistent with
 App Store Review Guideline 4.8. If you sign in with Apple:
 
 - You may choose to share your real Apple ID email or to use
   **Private Relay** (Apple's email-masking service). Either way,
-  IBA Companion treats the address as your account email and sends
+  IBA Performer treats the address as your account email and sends
   operational email to it.
 - If Apple provides a display name to us during the first-time
   sign-in, we store it as your profile name. You can change this
   at any time in the IBA Music admin dashboard or by emailing
   [privacy@ibamusic.com](mailto:privacy@ibamusic.com).
 - Apple assigns IBA Music a stable "user identifier" that is
-  unique to your Apple ID and the IBA Companion app. IBA Music
+  unique to your Apple ID and the IBA Performer app. IBA Music
   stores this identifier to recognize your account on future
   sign-ins. It cannot be used to look you up in any other Apple
   service.
@@ -658,8 +674,8 @@ App Store Review Guideline 4.8. If you sign in with Apple:
 ### 6.3 Push notifications (APNs)
 
 Push notifications are **optional**. iOS asks you for permission
-the first time IBA Companion tries to register. If you grant it,
-IBA Companion registers for remote notifications and hands the
+the first time IBA Performer tries to register. If you grant it,
+IBA Performer registers for remote notifications and hands the
 APNs device token to IBA Music's backend so we can deliver
 operational notifications to you.
 
@@ -690,11 +706,11 @@ IBA Music uses push notifications **only** for:
 We do **not** send advertising notifications, marketing offers,
 third-party promotions, or behavioral re-engagement nudges. You
 can disable notifications at any time in **Settings →
-Notifications → IBA Companion**.
+Notifications → IBA Performer**.
 
 ### 6.4 Live Activities (Set Tracker) and WeatherKit
 
-IBA Companion declares `NSSupportsLiveActivities` so that during a
+IBA Performer declares `NSSupportsLiveActivities` so that during a
 live performance it can optionally display a **Set Tracker** Live
 Activity on your lock screen and in the Dynamic Island. The Live
 Activity shows set-by-set timing — current set, remaining time,
@@ -707,13 +723,13 @@ elsewhere in this policy.
 The Live Activity may also show an optional **hourly
 precipitation timeline** for the venue using **Apple WeatherKit**.
 When the Live Activity has venue coordinates from the performance
-schedule, IBA Companion asks WeatherKit for a short-range forecast
+schedule, IBA Performer asks WeatherKit for a short-range forecast
 at those coordinates. WeatherKit is an Apple service: the forecast
 query uses the venue's coordinates (not your device's location)
 and is subject to Apple's own WeatherKit privacy terms. IBA Music
 does not receive any additional personal data back from Apple in
 this flow — only a forecast — and the forecast is rendered
-locally on your device. IBA Companion does not query WeatherKit
+locally on your device. IBA Performer does not query WeatherKit
 for your current location and does not log or transmit the
 forecast data elsewhere.
 
@@ -721,34 +737,34 @@ Live Activities are managed by iOS and follow Apple's timing
 rules: they appear while the performance is active, update via
 ActivityKit, and are dismissed automatically (or on your manual
 swipe) when the performance ends. You can disable Live Activities
-for IBA Companion at any time in **Settings → IBA Companion →
+for IBA Performer at any time in **Settings → IBA Performer →
 Live Activities** (or globally via **Settings → Face ID &
 Passcode → Allow Access When Locked → Live Activities**).
 
 ### 6.5 App Tracking Transparency (ATT) and the IDFA
 
-IBA Companion does **not** track you across apps and websites
+IBA Performer does **not** track you across apps and websites
 owned by other companies, and does **not** show the App Tracking
 Transparency prompt, because there is nothing to ask permission
 for:
 
-- IBA Companion does **not** read, request, or store the
+- IBA Performer does **not** read, request, or store the
   Identifier for Advertisers (IDFA / `advertisingIdentifier`).
-- IBA Companion includes **no advertising SDKs** of any kind —
+- IBA Performer includes **no advertising SDKs** of any kind —
   no Google Ads Mobile SDK, no Meta Audience Network SDK, no
   AppLovin, no Unity Ads, no Chartboost, no IronSource, none.
-- The **iOS** build of IBA Companion includes **no analytics SDKs** —
+- The **iOS** build of IBA Performer includes **no analytics SDKs** —
   no Firebase Analytics, no Amplitude, no Mixpanel, no Segment, no
   Hotjar, no Sentry, no Crashlytics, none. (The Android build uses
   Firebase Cloud Messaging for push and Firebase Crashlytics for crash
   reporting only — both operational, neither for advertising — as
   disclosed in section 6A; it likewise includes no analytics or
   advertising SDKs.)
-- IBA Companion does **not** share any data with third parties
+- IBA Performer does **not** share any data with third parties
   for cross-app or cross-site advertising. It does not share data
   with data brokers.
 
-Consistent with this, IBA Companion declares in its App Store
+Consistent with this, IBA Performer declares in its App Store
 privacy report that it does **not** use data to track users and
 does **not** perform any of Apple's defined tracking activities.
 
@@ -756,7 +772,7 @@ does **not** perform any of Apple's defined tracking activities.
 
 You can close your IBA Music account at any time.
 
-**In-app option (recommended).** Open IBA Companion, go to
+**In-app option (recommended).** Open IBA Performer, go to
 **Settings → Account → Delete Account**, and follow the prompts.
 The flow discloses what happens to your data, asks you to
 re-authenticate to prove you own the account, and closes your
@@ -773,7 +789,7 @@ account on the same terms.
 
 **What happens when you close your account.** We immediately
 deactivate your IBA Music account so you can no longer sign in to
-IBA Companion or to the web tools through any sign-in provider
+IBA Performer or to the web tools through any sign-in provider
 (Apple, Google, Microsoft, or email). You are signed out on every
 device you were using. Push notifications to those devices stop. You
 are no longer a member of any show chat and receive nothing from it.
@@ -799,7 +815,7 @@ continuity need. The retained information is **not** made available
 to any active feature of the Service — it is not used for scheduling,
 messaging or chat, push notifications, marketing, automated processing,
 feature enrichment, model training, analytics, or any operational
-function of IBA Companion after your account is closed. You are not
+function of IBA Performer after your account is closed. You are not
 contacted about events, schedules, availability, or any other
 operational matter after closure.
 
@@ -809,7 +825,7 @@ pending audit, legal hold, or ongoing dispute requires continued
 retention.
 
 **What happens to your calendars.** Closing your IBA Music account
-does **not** automatically delete calendars IBA Companion previously
+does **not** automatically delete calendars IBA Performer previously
 created in your Google Calendar or Apple Calendar. Those calendars
 belong to you and remain in your account under your sole control.
 See sections 5.5 and 6.1 for how to remove them if you wish.
@@ -826,15 +842,15 @@ legal obligations IBA Music is required to meet.
 ### 6.7 App Store privacy labels — data mapping
 
 Below is how the data described elsewhere in this policy maps to
-Apple's App Store privacy-label categories **for IBA Companion**. This
+Apple's App Store privacy-label categories **for IBA Performer**. This
 exists so App Store reviewers can cross-check the policy against the
-privacy nutrition label displayed on IBA Companion's App Store page.
+privacy nutrition label displayed on IBA Performer's App Store page.
 The equivalent mapping for the Android app's Google Play **Data
 Safety** form is in section 6A.8 — note that, unlike iOS, the Android
 app does collect crash/diagnostic data via Firebase Crashlytics.
 
 **Reviewing IBA Admin instead?** Use the table in section 6B.9. This
-one is IBA Companion's and includes categories, such as Location and
+one is IBA Performer's and includes categories, such as Location and
 Phone Number, that IBA Admin does not collect.
 
 | Apple category | Items collected | Linked to user? | Used to track? | Purpose |
@@ -852,7 +868,7 @@ Phone Number, that IBA Admin does not collect.
 | **Browsing History** | *Not collected* | — | — | — |
 | **Search History** | *Not collected* | — | — | — |
 
-"Used to track?" is **No for every category** because IBA Companion
+"Used to track?" is **No for every category** because IBA Performer
 does not perform any of Apple's defined tracking activities (see
 section 6.5).
 
@@ -867,7 +883,7 @@ choose to send (§3.10).
 
 ### 6.8 Supported operating systems and upgrade path
 
-IBA Companion supports the current major version of iOS plus the
+IBA Performer supports the current major version of iOS plus the
 immediately previous major version where practical. Security fixes
 target the current version first. If your iPhone cannot run a
 supported version, some features — notably calendar sync and
@@ -987,9 +1003,9 @@ messages or photos.
 ## 6B. IBA Admin (iOS) Platform Disclosures
 
 This section covers the **IBA Admin** iPhone app described in section
-1.2. It is a separate app from IBA Companion with a different audience,
+1.2. It is a separate app from IBA Performer with a different audience,
 a different sign-in method, and a materially smaller data footprint.
-Sections 6 and 6A describe IBA Companion and do **not** apply to
+Sections 6 and 6A describe IBA Performer and do **not** apply to
 IBA Admin.
 
 IBA Admin is distributed only to IBA Music office staff and authorized
@@ -1038,7 +1054,7 @@ venue geofence editor. Both plot **venue** coordinates supplied by
 IBA Music's own servers. Those are business records about a place, not
 information about the person using the app.
 
-This is a deliberate difference from IBA Companion, which does collect
+This is a deliberate difference from IBA Performer, which does collect
 a momentary GPS reading at check-in (section 3.3). **That disclosure
 does not apply to IBA Admin.**
 
@@ -1096,8 +1112,8 @@ Transparency prompt because it has nothing to ask for.
 
 The app contains **no third-party SDKs at all** — no analytics, no
 crash reporter, no advertising library. Its only dependencies are
-first-party Apple frameworks. Note that this differs from the Android
-edition of IBA Companion, which does use Firebase Crashlytics
+first-party Apple frameworks. Note that this differs from IBA Companion
+for Android, which does use Firebase Crashlytics
 (section 6A.4); **no equivalent exists in IBA Admin**.
 
 The app also does not access the camera or the photo library, and
@@ -1106,7 +1122,7 @@ declares no camera permission.
 ### 6B.9 App Store privacy labels — data mapping for IBA Admin
 
 This is the mapping for **IBA Admin**. The table in section 6.7 is for
-IBA Companion and lists categories — notably Location and Phone — that
+IBA Performer and lists categories — notably Location and Phone — that
 IBA Admin does **not** collect. App Store reviewers cross-checking
 IBA Admin's privacy label should use this table.
 
@@ -1171,7 +1187,7 @@ below is a summary.
 |---|---|
 | **Apple Inc.** | Apple Push Notification service (APNs), Apple Sign-In, EventKit for optional Apple Calendar sync, ActivityKit for the Set Tracker Live Activity (§6.4), and Apple WeatherKit for the optional venue precipitation forecast shown inside the Live Activity (queries use venue coordinates, not your device location). |
 | **Google LLC** | Google Calendar API via the `calendar.app.created` scope (opt-in calendar sync on iOS); Google Sign-In for authentication; and, on Android, **Firebase Cloud Messaging** (operational push-notification delivery) and **Firebase Crashlytics** (crash and diagnostic reporting, with on-device PII redaction). |
-| **Microsoft Corporation** | Microsoft Sign-In (Azure Active Directory) — IBA Companion offers Microsoft 365 sign-in to musicians whose IBA Music account is linked to a Microsoft identity, alongside Apple Sign-In and Google Sign-In. Microsoft Graph is also used on the IBA Music admin side to sync performance bookings with IBA Music staff Outlook calendars; that admin use is not part of the IBA Companion app. |
+| **Microsoft Corporation** | Microsoft Sign-In (Azure Active Directory) — IBA Performer offers Microsoft 365 sign-in to musicians whose IBA Music account is linked to a Microsoft identity, alongside Apple Sign-In and Google Sign-In. Microsoft Graph is also used on the IBA Music admin side to sync performance bookings with IBA Music staff Outlook calendars; that admin use is not part of the IBA Performer app. |
 | **Cloudflare, Inc.** | Edge hosting for admin.ibamusic.com and related tools, database storage (Cloudflare D1 — performance schedule, check-ins, song metadata), object storage (Cloudflare R2 — IBA Music's multitrack audio stems used by the Practice feature, §3.9, and photos sent in Show Chat, §3.14), Show Confirm and Show Chat records and messages (D1), and Cloudflare Pages hosting for this legal subdomain itself. Cloudflare processes data on IBA Music's behalf; its own use of the data is governed by its contractual role as a processor. |
 
 We also disclose information when we reasonably believe disclosure
@@ -1215,8 +1231,8 @@ email address on file with your account, or use another method
 reasonable to verify your identity. We respond within the time
 frames required by applicable law.
 
-For step-by-step instructions on deleting your IBA Companion
-account from inside the iOS or Android app, see the dedicated
+For step-by-step instructions on deleting your account from inside
+IBA Performer (iOS) or IBA Companion (Android), see the dedicated
 [Account deletion](/account-deletion/) page.
 
 ## 10. European Economic Area, United Kingdom, and Switzerland (GDPR)
@@ -1226,7 +1242,7 @@ or Switzerland, the following additional information applies.
 
 - **Data controller:** Island Breeze Affiliates Inc., Florida, USA.
 - **Lawful bases for processing:**
-    - *Contract performance* — operating IBA Companion and admin
+    - *Contract performance* — operating IBA Performer and admin
       tools so you can do the work you were hired to do.
     - *Legitimate interests* — running IBA Music's business safely,
       preventing fraud, investigating security incidents, and

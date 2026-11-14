@@ -19,7 +19,7 @@ schedule change, put **"Urgent —"** at the start of the subject line.
 
 It helps if you include:
 
-- Which app you are using (IBA Admin or IBA Companion) and your device.
+- Which app you are using (IBA Admin or IBA Performer) and your device.
 - The email address your account uses.
 - What you expected to happen and what happened instead.
 
@@ -72,9 +72,9 @@ calendar back to us.
 Check iOS **Settings → Notifications → IBA Admin**. Notifications are
 optional and can be declined at install time.
 
-## IBA Companion
+## IBA Performer
 
-Performers using **IBA Companion** can email the same address. If your
+Performers using **IBA Performer** can email the same address. If your
 question is about a specific booking or a schedule change, contacting
 your band leader directly is usually faster.
 

@@ -1,13 +1,13 @@
 ---
 layout: layouts/base.njk
-title: IBA Companion — by Island Breeze Affiliates Inc. (IBA Music)
-description: IBA Companion is the private companion app for musicians contracted to IBA Music. Musicians use it to view their performance schedule, check in at venues, rehearse setlists with multitrack audio stems, and optionally sync their schedule to Google Calendar or Apple Calendar. This page is the app home page and legal document directory.
+title: IBA Performer — by Island Breeze Affiliates Inc. (IBA Music)
+description: IBA Performer is the private companion app for musicians contracted to IBA Music. Musicians use it to view their performance schedule, check in at venues, rehearse setlists with multitrack audio stems, and optionally sync their schedule to Google Calendar or Apple Calendar. This page is the app home page and legal document directory.
 permalink: /
 ---
 
-**IBA Companion** is the private companion mobile app operated by
+**IBA Performer** is the private companion mobile app operated by
 **Island Breeze Affiliates Inc.** (d/b/a **IBA Music**), a Florida
-live-music performance company. This page is IBA Companion's
+live-music performance company. This page is IBA Performer's
 official home page and the directory for every legal document that
 covers the app.
 
@@ -16,9 +16,9 @@ covers the app.
 [Terms of Service](https://legal.ibamusic.com/terms/) ·
 [Contact](https://legal.ibamusic.com/contact/)
 
-## What IBA Companion is
+## What IBA Performer is
 
-IBA Companion is a **private-use app for musicians contracted to
+IBA Performer is a **private-use app for musicians contracted to
 IBA Music**. It is not a general-purpose consumer product and is
 not distributed to the public at large — it is only used by people
 who already have an active performance, staff, or contractor
@@ -33,9 +33,9 @@ disclosures for each are in the
 [Privacy Policy](https://legal.ibamusic.com/privacy/) (section 6 for
 Apple, section 6A for Google Play / Android).
 
-## What IBA Companion does
+## What IBA Performer does
 
-IBA Companion lets an IBA Music musician:
+IBA Performer lets an IBA Music musician:
 
 - **View the performance schedule** that IBA Music has booked for
   them — venue, date, start and end time, call time, dress code,
@@ -66,19 +66,19 @@ IBA Companion lets an IBA Music musician:
   shown as a Live Activity on the lock screen and Dynamic Island on
   iOS, and as an ongoing notification on Android.
 
-## How IBA Companion uses Google API data
+## How IBA Performer uses Google API data
 
 The Google Calendar sync feature is **opt-in**. When a musician
-chooses to enable it, IBA Companion uses the Google OAuth 2.0
+chooses to enable it, IBA Performer uses the Google OAuth 2.0
 authorization flow to request a single, narrow scope:
 
 **`https://www.googleapis.com/auth/calendar.app.created`**
 
-This scope lets IBA Companion create and manage **only the
-calendars IBA Companion itself creates** in the user's Google
+This scope lets IBA Performer create and manage **only the
+calendars IBA Performer itself creates** in the user's Google
 account. It does **not** allow reading, writing, or deleting any
 calendar the user created manually or that was shared with them
-by another person. IBA Companion creates:
+by another person. IBA Performer creates:
 
 - One primary calendar named **IBA Music** in the user's Google
   account, and
@@ -86,7 +86,7 @@ by another person. IBA Companion creates:
   **IBA — {Band Name}** (for example, *IBA — Beach Boys Tribute*).
 
 Events written to those calendars are drawn from the user's own
-IBA Music performance schedule. IBA Companion **never**:
+IBA Music performance schedule. IBA Performer **never**:
 
 - Reads any calendar the user created manually
 - Reads any calendar shared with the user by another person
@@ -105,23 +105,23 @@ what can be done with it, how to revoke it, and what happens to
 calendars after revocation — is in
 [Privacy Policy §5 — Google Calendar Integration](https://legal.ibamusic.com/privacy/).
 
-## Legal documents for IBA Companion
+## Legal documents for IBA Performer
 
-All legal documents that apply to IBA Companion, the IBA Music
+All legal documents that apply to IBA Performer, the IBA Music
 admin dashboard, and IBA Music's other web tools are published on
 this subdomain:
 
 - **[Privacy Policy](https://legal.ibamusic.com/privacy/)** — What
-  data IBA Companion collects, how we use it, how we share it,
+  data IBA Performer collects, how we use it, how we share it,
   and how the Google Calendar scope (`calendar.app.created`) is
   used.
 - **[Terms of Service](https://legal.ibamusic.com/terms/)** —
-  Rules for using IBA Companion and IBA Music web tools. Governed
+  Rules for using IBA Performer and IBA Music web tools. Governed
   by Florida law. Includes a binding arbitration clause with a
   30-day opt-out for new users.
 - **[Account deletion](https://legal.ibamusic.com/account-deletion/)** —
-  How to delete your IBA Companion account from the iOS or Android
-  app, what is removed, and the tax/labor records IBA Music must
+  How to delete your account from IBA Performer (iOS) or IBA Companion
+  (Android), what is removed, and the tax/labor records IBA Music must
   retain.
 - **[Cookie Policy](https://legal.ibamusic.com/cookies/)** — How
   (and whether) cookies are used. This legal subdomain sets no
@@ -130,7 +130,7 @@ this subdomain:
   The third-party providers (Apple, Google, Microsoft, Cloudflare)
   that process personal data on IBA Music's behalf.
 - **[Open Source Licenses](https://legal.ibamusic.com/licenses/)** —
-  Attribution for the open source software used by IBA Companion.
+  Attribution for the open source software used by IBA Performer.
 - **[Security](https://legal.ibamusic.com/security/)** — Security
   practices and the responsible-disclosure process. A
   machine-readable contact is also published at
@@ -145,7 +145,7 @@ The app is built and operated by **Island Breeze Affiliates Inc.**
 (d/b/a IBA Music), a corporation organized under the laws of the
 State of **Florida, USA**. IBA Music books and manages live-music
 performances at venues including theme parks, resorts, private
-events, and concert venues. IBA Companion is an internal tool for
+events, and concert venues. IBA Performer is an internal tool for
 the musicians, band leaders, and office staff who deliver those
 performances.
 
@@ -154,14 +154,14 @@ performances.
 Privacy, legal, and security inquiries:
 **[privacy@ibamusic.com](mailto:privacy@ibamusic.com)**
 
-If you believe you have reached this site in error — IBA Companion
+If you believe you have reached this site in error — IBA Performer
 is not a general-purpose consumer app and is not available through
 the public App Store listings without a valid IBA Music
 invitation — you can safely close this tab.
 
 ---
 
-*This page serves as both the IBA Companion application home page
+*This page serves as both the IBA Performer application home page
 (as referenced in the Google Cloud Console OAuth consent screen)
 and as the directory for every legal document that governs the app.
 It is published as part of Google's OAuth verification requirements

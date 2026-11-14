@@ -20,7 +20,7 @@ products.
 
 "Service" means, collectively:
 
-- **IBA Companion** for iOS (iPhone) and for Android (Google Play);
+- **IBA Performer** for iOS (iPhone), and the same app for Android (Google Play), where it is still named **IBA Companion**;
 - the **IBA Music Admin Dashboard** at admin.ibamusic.com; and
 - IBA Music's internal web tools for musician availability and
   band leader scheduling.
@@ -91,7 +91,7 @@ responsible-disclosure policy on the [Security](/security) page.
 
 ### 4.4 Practice audio stems
 
-The Practice feature in IBA Companion delivers multitrack audio
+The Practice feature in IBA Performer delivers multitrack audio
 stems (individual instrument recordings for rehearsal). Those
 stems are the **intellectual property of IBA Music or its
 licensors**. Your license to access and cache them on-device is:
@@ -114,10 +114,11 @@ file still exists on your device.
 
 ### 4.5 Show chats
 
-Each show on iOS has a group chat for the people assigned to it,
-anyone an IBA Music administrator adds, and IBA Music office staff
-(see [Privacy Policy §3.14](/privacy/)). It is a **work channel** for
-that show. You agree not to use it to:
+On iOS, each band or contract has a group chat, with a thread for
+each show, for the people who play those shows, anyone an IBA Music
+administrator adds, and IBA Music office staff (see
+[Privacy Policy §3.14](/privacy/)). It is a **work channel** for those
+shows. You agree not to use it to:
 
 - **Harass, threaten, or demean** anyone, or post hateful, sexual,
   or otherwise abusive content.
@@ -126,7 +127,7 @@ that show. You agree not to use it to:
 - **Share other people's private information**, such as phone
   numbers, addresses, photos of people who have not agreed, or
   details about someone's health or personal life.
-- **Spam or advertise**, or discuss matters unrelated to the show.
+- **Spam or advertise**, or discuss matters unrelated to the work.
 
 IBA Music office staff can read every show chat. IBA Music may
 **remove any message**, may **remove a person from a chat**, and may
@@ -138,7 +139,10 @@ lead to suspension or termination under section 10.
 
 You can delete your own messages. To **report a message**, use the
 report option on that message in the app, optionally giving a
-reason; reports go to IBA Music office staff. You can also write to
+reason; reports go to IBA Music office staff, who review them. You
+can also **block** another member, which hides their messages,
+photos and reactions from you in every chat without telling them,
+and reports the message you blocked them from. You can also write to
 [privacy@ibamusic.com](mailto:privacy@ibamusic.com).
 
 ## 5. Fees and Payments
@@ -166,17 +170,17 @@ service outages, event-delivery delays, data loss on Google's side,
 or changes in Google's API. Your use of Google Calendar is governed
 by Google's own terms of service, which you accept directly with
 Google. You may disconnect the integration at any time from inside
-IBA Companion or by revoking access at
+IBA Performer or by revoking access at
 [myaccount.google.com/permissions](https://myaccount.google.com/permissions).
 
-**Apple Calendar.** IBA Companion can also sync your schedule to
+**Apple Calendar.** IBA Performer can also sync your schedule to
 your iPhone's Apple Calendar using the Apple EventKit framework, as
 described in
 [Privacy Policy §6.1](/privacy/). This is an on-device, local
 integration — IBA Music's servers do not store a mirror of your
 Apple Calendar data. You can revoke Apple Calendar access at any
 time in **Settings → Privacy & Security → Calendars →
-IBA Companion**. Your use of Apple Calendar is governed by Apple's
+IBA Performer**. Your use of Apple Calendar is governed by Apple's
 own terms.
 
 **Android device calendar.** On Android, IBA Companion syncs your
@@ -191,7 +195,7 @@ that provider's own terms.
 
 ## 7. Apple App Store — Standard EULA
 
-When you install IBA Companion from the Apple App Store, the
+When you install IBA Performer from the Apple App Store, the
 **Apple Media Services Terms and Conditions** and Apple's
 **Licensed Application End User License Agreement** (the
 "Apple Standard EULA") also apply to your use of the app, to the
@@ -205,20 +209,20 @@ You acknowledge that:
 
 - These Terms are between **you and IBA Music**, not between you
   and Apple. IBA Music (not Apple) is solely responsible for
-  IBA Companion and its content.
+  IBA Performer and its content.
 - **Apple has no obligation** to furnish any maintenance or
-  support services with respect to IBA Companion.
-- In the event of any failure of IBA Companion to conform to any
+  support services with respect to IBA Performer.
+- In the event of any failure of IBA Performer to conform to any
   applicable warranty, you may notify Apple, and Apple will refund
-  the purchase price (if any) for IBA Companion. IBA Companion is
+  the purchase price (if any) for IBA Performer. IBA Performer is
   distributed free of charge, so the refund amount is zero. To
   the maximum extent permitted by applicable law, Apple will have
   no other warranty obligation whatsoever with respect to
-  IBA Companion.
+  IBA Performer.
 - IBA Music, not Apple, is responsible for addressing any of your
-  or any third party's claims relating to IBA Companion or your
+  or any third party's claims relating to IBA Performer or your
   possession and use of it, including (a) product-liability
-  claims, (b) any claim that IBA Companion fails to conform to
+  claims, (b) any claim that IBA Performer fails to conform to
   any applicable legal or regulatory requirement, and (c) claims
   arising under consumer-protection, privacy, or similar
   legislation.
@@ -231,7 +235,7 @@ You acknowledge that:
 
 You can close your IBA Music account at any time.
 
-**In-app option (primary path).** Open IBA Companion and go to
+**In-app option (primary path).** Open IBA Performer and go to
 **Settings → Account → Delete Account**. The flow discloses what
 happens to your data, asks you to re-authenticate to prove you own
 the account, and closes your account once you confirm. You do not
@@ -269,7 +273,7 @@ operational communication after closure.
 
 **Effect on Google Calendar / Apple Calendar.** Closing your
 IBA Music account does **not** automatically delete calendars
-IBA Companion previously created in your Google or Apple Calendar.
+IBA Performer previously created in your Google or Apple Calendar.
 Those calendars belong to you and remain in your account under
 your sole control. See [Privacy Policy §5.5](/privacy/) and
 [§6.1](/privacy/) for how to remove them.
