@@ -27,7 +27,7 @@ hosts.
   Microsoft Sign-In (Azure Active Directory).
 - **Passkeys (WebAuthn).** The IBA Music admin dashboard supports
   passkey authentication for staff sign-in, backed by the device's
-  secure enclave or hardware security module. The IBA Companion iOS
+  secure enclave or hardware security module. The IBA Performer iOS
   app uses OAuth 2.0 (Apple, Google, Microsoft) and email-and-password
   sign-in only.
 - **Session tokens** expire on a rolling basis and are bound to the
@@ -105,7 +105,7 @@ In scope for responsible disclosure:
 
 - admin.ibamusic.com and other IBA Music-owned production web
   tools.
-- IBA Companion iOS app — as published on the App Store.
+- IBA Performer iOS app — as published on the App Store.
 - API endpoints owned by IBA Music at companion.ibamusic.com and
   related subdomains.
 - This legal subdomain (legal.ibamusic.com).

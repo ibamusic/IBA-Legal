@@ -16,10 +16,10 @@ Service](/terms) and the [Privacy Policy](/privacy). The open
 source licenses below govern only the relationship between IBA
 Music and the respective upstream project maintainers.
 
-## IBA Companion (iOS)
+## IBA Performer (iOS)
 
 The authoritative, up-to-date acknowledgements list for the
-IBA Companion iOS app is visible inside the app itself, under
+IBA Performer iOS app is visible inside the app itself, under
 **Settings → About → Acknowledgements**. The list below is a
 convenience mirror.
 

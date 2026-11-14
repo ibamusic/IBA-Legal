@@ -1,18 +1,18 @@
 ---
 layout: layouts/base.njk
 title: Account deletion
-description: How to delete your IBA Companion account, what data is removed, and what we retain for tax and labor-records compliance.
+description: How to delete your IBA Performer account, what data is removed, and what we retain for tax and labor-records compliance.
 permalink: /account-deletion/
 ---
 
-This page describes how to delete your **IBA Companion** account on
+This page describes how to delete your **IBA Performer** account on
 iOS or Android, what information is removed when you do so, and the
 records IBA Music must retain for tax, payroll, and labor-law
 purposes. It exists so that the deletion path is discoverable
 without first installing the app, as required by Google Play and
 the Apple App Store.
 
-If you have only used IBA Companion to view your schedule and have
+If you have only used IBA Performer to view your schedule and have
 not yet been booked on any event, you can delete your account
 entirely in the app. If you have ever been paid by IBA Music — even
 once — some records must be retained by law; see *What we retain*
@@ -26,7 +26,7 @@ calls our deletion endpoint and wipes the app's on-device data.
 
 **iOS:**
 
-1. Open **IBA Companion**.
+1. Open **IBA Performer**.
 2. Tap the **Settings** tab.
 3. Scroll to the bottom of the screen and tap **Delete Account**.
 4. Read the disclosure and tap **Continue**.
@@ -37,7 +37,7 @@ calls our deletion endpoint and wipes the app's on-device data.
 
 **Android:**
 
-1. Open **IBA Companion**.
+1. Open **IBA Performer**.
 2. Tap the **Settings** tab.
 3. Scroll to **Delete Account** and tap it.
 4. Read the disclosure and tap **Continue**.
@@ -71,7 +71,7 @@ completed.
 
 ## What happens when you delete
 
-Account deletion in IBA Companion is implemented as a
+Account deletion in IBA Performer is implemented as a
 **deactivation**. Concretely:
 
 - Your account is marked inactive on our servers immediately. You

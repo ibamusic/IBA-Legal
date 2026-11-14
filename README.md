@@ -4,7 +4,7 @@ Source for **legal.ibamusic.com** — the public legal-documents subdomain for
 **Island Breeze Affiliates Inc.** (d/b/a IBA Music).
 
 This repository exists primarily to satisfy Google OAuth verification for the
-IBA Companion iOS app's Google Calendar sync feature. Google requires public,
+IBA Performer iOS app's Google Calendar sync feature. Google requires public,
 JavaScript-free Privacy Policy and Terms of Service URLs that specifically
 enumerate the OAuth scopes an app uses. Those URLs live on this site.
 

@@ -7,7 +7,7 @@ permalink: /subprocessors/
 
 This page lists the third-party service providers ("sub-processors")
 that process personal data on behalf of **Island Breeze Affiliates
-Inc.** (d/b/a IBA Music) to deliver the IBA Companion app, the
+Inc.** (d/b/a IBA Music) to deliver the IBA Performer app, the
 IBA Music admin dashboard, and related web tools. IBA Music
 remains the data controller for all personal data described in our
 [Privacy Policy](/privacy). Each sub-processor listed here acts
@@ -28,7 +28,7 @@ easy to consume on its own.
 |---|---|---|---|
 | **Apple Inc.** | Apple Push Notification service (APNs); Sign in with Apple; EventKit framework for on-device Apple Calendar sync; ActivityKit for the Set Tracker Live Activity; Apple WeatherKit for the optional venue precipitation forecast shown inside the Live Activity (queries use venue coordinates, not device location) | USA, global edge | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/en-ww/) |
 | **Google LLC** | Google Calendar API (opt-in, `calendar.app.created` scope only, iOS); Google Sign-In for authentication; and, on Android, **Firebase Cloud Messaging** (operational push-notification delivery) and **Firebase Crashlytics** (crash and diagnostic reporting, with on-device PII redaction). | USA, global edge | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| **Microsoft Corporation** | Microsoft Azure Active Directory — IBA Companion offers Microsoft 365 sign-in to musicians whose IBA Music account is linked to a Microsoft identity. Microsoft Graph is also used on the IBA Music admin side to sync performance bookings with IBA Music staff Outlook calendars; that admin use is not part of the IBA Companion app. | USA, global edge | [privacy.microsoft.com](https://privacy.microsoft.com/en-us/privacystatement) |
+| **Microsoft Corporation** | Microsoft Azure Active Directory — IBA Performer offers Microsoft 365 sign-in to musicians whose IBA Music account is linked to a Microsoft identity. Microsoft Graph is also used on the IBA Music admin side to sync performance bookings with IBA Music staff Outlook calendars; that admin use is not part of the IBA Performer app. | USA, global edge | [privacy.microsoft.com](https://privacy.microsoft.com/en-us/privacystatement) |
 | **Cloudflare, Inc.** | Edge hosting for admin.ibamusic.com and related tools; Cloudflare D1 database storage (performance schedule, check-ins, song metadata); Cloudflare R2 object storage (IBA Music's multitrack audio stems used by the Practice feature, and photos sent in Show Chat); Show Confirm and Show Chat messages and records in D1; Cloudflare Pages hosting for this legal subdomain | USA, global edge | [cloudflare.com/privacypolicy](https://www.cloudflare.com/privacypolicy/) |
 
 All listed providers process personal data only as needed to
@@ -47,7 +47,7 @@ IBA Music does **not** use:
   Segment, Hotjar, etc.)
 - Any advertising or marketing crash/diagnostic use. IBA Music does
   not operate a custom diagnostic telemetry pipeline of its own. On
-  **iOS**, IBA Companion integrates no third-party crash-reporting SDK
+  **iOS**, IBA Performer integrates no third-party crash-reporting SDK
   (no Sentry, Crashlytics, or Bugsnag); the only crash reports we may
   see there are those Apple shares with us through App Store Connect
   when a user opts in via the system "Share With App Developers"
